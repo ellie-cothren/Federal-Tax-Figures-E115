@@ -1,4 +1,4 @@
-﻿fiscal_year,Individual Income Taxes,Corporate Income Taxes,Excise Taxes,Other,SS and Retirement Receipts (total),SS and Retirement Receipts (on budget),SS and Retirement Receipts (off budget),Total Receipts (on budget),Total Receipts (off budget)
+﻿year,individual income taxes,corporate income taxes,excise taxes,other taxes,ss and retirement receipts (total),ss and retirement receipts (on budget),ss and retirement receipts (off budget),total receipts (on budget),total receipts (off budget)
 1979,0.47,0.142,0.04,0.048,0.3,0.088,0.212,0.788,0.212
 1980,0.472,0.125,0.047,0.051,0.305,0.086,0.219,0.781,0.219
 1981,0.477,0.102,0.068,0.048,0.305,0.088,0.217,0.783,0.217
