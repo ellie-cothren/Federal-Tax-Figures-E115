@@ -26,7 +26,7 @@ labels = ['Individual Income Taxes', 'Corporate Income Taxes', 'Excise Taxes', '
 
 
 # create pie chart
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(14,8))
 
 def func(pct, allvals):
     absolute = int(np.round(pct/100.*np.sum(allvals)))
@@ -43,8 +43,9 @@ ax.legend(wedges, labels,
 
 plt.setp(autotexts, size=10, weight="bold")
 
-ax.set_title("Sources of U.S. Federal Tax Revenue 2022",
-             fontsize = 22)
+plt.suptitle('U.S. Federal Tax Revenues: Fiscal Year %i' %fy,
+             fontsize = 20)
+plt.title('Total Revenue = $%i billion' %sum(revenues))
 
 
 # save figure to given file path and display
@@ -52,4 +53,5 @@ save_file = 'E115_Tax_Figures/pie_chart.png'
 plt.savefig(save_file)
 
 plt.show()
+
 
