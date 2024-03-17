@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import plotly.graph_objects as go
+
 
 # import data from given file path
 file = 'https://raw.githubusercontent.com/ellie-cothren/Federal-Tax-Figures-E115/main/data/avg_effective_tax_rates.csv'
@@ -9,15 +9,6 @@ file = 'https://raw.githubusercontent.com/ellie-cothren/Federal-Tax-Figures-E115
 df = pd.read_csv(file)
 df.columns = 'year', 'measure', 'lowq', '2q', 'midq', '4q', 'highq', 'allq', '80to90p', '91to95p', '96to99p', 'top1p'
 
-
-# set negative effecive tax rates to zero (to help visualization)
-def negative_to_zero(x):
-    if type(x) != str:
-        return x if x>0 else 0
-    else:
-        return x
-
-#df = df.map(negative_to_zero)
 
 
 # create stacked bar chart for a particular fiscal year (1979 to 2018)
